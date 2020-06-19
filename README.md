@@ -1,0 +1,2 @@
+# hwplayer
+将华为的直播web播放脚本hwplayer转为npm包
