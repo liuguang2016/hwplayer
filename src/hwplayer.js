@@ -15,10 +15,16 @@
       for (u && u(t); l.length; ) l.shift()();
     }
     var n = {},
-      r = { 1: 0 };
+      r = {
+        1: 0,
+      };
     function i(t) {
       if (n[t]) return n[t].exports;
-      var r = (n[t] = { i: t, l: !1, exports: {} });
+      var r = (n[t] = {
+        i: t,
+        l: !1,
+        exports: {},
+      });
       return e[t].call(r.exports, r, r.exports, i), (r.l = !0), r.exports;
     }
     (i.e = function (e) {
@@ -56,7 +62,10 @@
               }
             });
           var l = setTimeout(function () {
-            a({ type: "timeout", target: u });
+            a({
+              type: "timeout",
+              target: u,
+            });
           }, 12e4);
           (u.onerror = u.onload = a), s.appendChild(u);
         }
@@ -65,13 +74,21 @@
       (i.m = e),
       (i.c = n),
       (i.d = function (e, t, n) {
-        i.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: n });
+        i.o(e, t) ||
+          Object.defineProperty(e, t, {
+            enumerable: !0,
+            get: n,
+          });
       }),
       (i.r = function (e) {
         "undefined" != typeof Symbol &&
           Symbol.toStringTag &&
-          Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
-          Object.defineProperty(e, "__esModule", { value: !0 });
+          Object.defineProperty(e, Symbol.toStringTag, {
+            value: "Module",
+          }),
+          Object.defineProperty(e, "__esModule", {
+            value: !0,
+          });
       }),
       (i.t = function (e, t) {
         if ((1 & t && (e = i(e)), 8 & t)) return e;
@@ -79,7 +96,10 @@
         var n = Object.create(null);
         if (
           (i.r(n),
-          Object.defineProperty(n, "default", { enumerable: !0, value: e }),
+          Object.defineProperty(n, "default", {
+            enumerable: !0,
+            value: e,
+          }),
           2 & t && "string" != typeof e)
         )
           for (var r in e)
@@ -198,7 +218,9 @@
     },
     function (e, t, n) {
       "use strict";
-      Object.defineProperty(t, "__esModule", { value: !0 });
+      Object.defineProperty(t, "__esModule", {
+        value: !0,
+      });
       var r,
         i,
         o = void 0,
@@ -303,7 +325,7 @@
                 (t.onreadystatechange = null),
                 !0)
               : (console.warn(
-                  "HWPLAYER: warn: script[data-hwplayerId=" + e + "]涓嶅瓨鍦�"
+                  "HWPLAYER: warn: script[data-hwplayerId=" + e + "]不存在"
                 ),
                 !1);
           },
@@ -313,7 +335,7 @@
                 ? t
                 : function () {
                     console.warn(
-                      "HWPLAYER: warn: 鎮ㄦ病鏈夎缃洖璋冨嚱鏁版垨鑰呭洖璋冨嚱鏁拌缃敊璇�"
+                      "HWPLAYER: warn: 您没有设置回调函数或者回调函数设置错误"
                     );
                   }),
               e.readyState
@@ -358,10 +380,13 @@
                   ? t
                   : function () {
                       console.warn(
-                        "HWPLAYER: warn: 鎮ㄦ病鏈夎缃洖璋冨嚱鏁版垨鑰呭洖璋冨嚱鏁拌缃敊璇�"
+                        "HWPLAYER: warn: 您没有设置回调函数或者回调函数设置错误"
                       );
                     }),
-              m && (s = { timestamp: new Date().getTime() });
+              m &&
+                (s = {
+                  timestamp: new Date().getTime(),
+                });
             var r = window.require,
               i = [p.getVideojsUrl()];
             r(i, function (e, i) {
@@ -404,10 +429,13 @@
                   ? t
                   : function () {
                       console.warn(
-                        "HWPLAYER: warn: 鎮ㄦ病鏈夎缃洖璋冨嚱鏁版垨鑰呭洖璋冨嚱鏁拌缃敊璇�"
+                        "HWPLAYER: warn: 您没有设置回调函数或者回调函数设置错误"
                       );
                     }),
-              m && (s = { timestamp: new Date().getTime() }),
+              m &&
+                (s = {
+                  timestamp: new Date().getTime(),
+                }),
               p.hwplayerLoad("videojs", p.getVideojsUrl(), function () {
                 v(n).then(function () {
                   var e = !0;
@@ -484,98 +512,97 @@
         g = 0,
         m = n(4),
         y = {
-          "Now Playing": "姝ｅ湪鎾斁",
-          "Up Next": "涓嬩竴涓�",
-          Play: "鎾斁",
-          Pause: "鏆傚仠",
-          "Current Time": "褰撳墠鏃堕棿",
-          Duration: "鏃堕暱",
-          "Remaining Time": "鍓╀綑鏃堕棿",
-          "Stream Type": "濯掍綋娴佺被鍨�",
-          LIVE: "鐩存挱",
-          Loaded: "鍔犺浇瀹屾瘯",
-          Progress: "杩涘害",
-          Fullscreen: "鍏ㄥ睆",
-          "Non-Fullscreen": "閫€鍑哄叏灞�",
-          Mute: "闈欓煶",
-          Unmute: "鍙栨秷闈欓煶",
-          "Playback Rate": "鎾斁閫熷害",
-          Subtitles: "瀛楀箷",
-          "subtitles off": "鍏抽棴瀛楀箷",
-          Captions: "鍐呭祵瀛楀箷",
-          "captions off": "鍏抽棴鍐呭祵瀛楀箷",
-          Chapters: "鑺傜洰娈佃惤",
-          "Close Modal Dialog": "鍏抽棴寮圭獥",
-          Descriptions: "鎻忚堪",
-          "descriptions off": "鍏抽棴鎻忚堪",
-          "Audio Track": "闊宠建",
-          "You aborted the media playback": "瑙嗛鎾斁琚粓姝�",
+          "Now Playing": "正在播放",
+          "Up Next": "下一个",
+          Play: "播放",
+          Pause: "暂停",
+          "Current Time": "当前时间",
+          Duration: "时长",
+          "Remaining Time": "剩余时间",
+          "Stream Type": "媒体流类型",
+          LIVE: "直播",
+          Loaded: "加载完毕",
+          Progress: "进度",
+          Fullscreen: "全屏",
+          "Non-Fullscreen": "退出全屏",
+          Mute: "静音",
+          Unmute: "取消静音",
+          "Playback Rate": "播放速度",
+          Subtitles: "字幕",
+          "subtitles off": "关闭字幕",
+          Captions: "内嵌字幕",
+          "captions off": "关闭内嵌字幕",
+          Chapters: "节目段落",
+          "Close Modal Dialog": "关闭弹窗",
+          Descriptions: "描述",
+          "descriptions off": "关闭描述",
+          "Audio Track": "音轨",
+          "You aborted the media playback": "视频播放被终止",
           "A network error caused the media download to fail part-way.":
-            "缃戠粶閿欒瀵艰嚧瑙嗛涓嬭浇涓€斿け璐ャ€�",
+            "网络错误导致视频下载中途失败。",
           "The media could not be loaded, either because the server or network failed or because the format is not supported.":
-            "瑙嗛鍥犳牸寮忎笉鏀寔鎴栬€呮湇鍔″櫒鎴栫綉缁滅殑闂鏃犳硶鍔犺浇銆�",
+            "视频因格式不支持或者服务器或网络的问题无法加载。",
           "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.":
-            "鐢变簬瑙嗛鏂囦欢鎹熷潖鎴栨槸璇ヨ棰戜娇鐢ㄤ簡浣犵殑娴忚鍣ㄤ笉鏀寔鐨勫姛鑳斤紝鎾斁缁堟銆�",
+            "由于视频文件损坏或是该视频使用了你的浏览器不支持的功能，播放终止。",
           "No compatible source was found for this media.":
-            "鏃犳硶鎵惧埌姝よ棰戝吋瀹圭殑婧愩€�",
+            "无法找到此视频兼容的源。",
           "The media is encrypted and we do not have the keys to decrypt it.":
-            "瑙嗛宸插姞瀵嗭紝鏃犳硶瑙ｅ瘑銆�",
-          "Play Video": "鎾斁瑙嗛",
-          Close: "鍏抽棴",
-          "Modal Window": "寮圭獥",
-          "This is a modal window": "杩欐槸涓€涓脊绐�",
+            "视频已加密，无法解密。",
+          "Play Video": "播放视频",
+          Close: "关闭",
+          "Modal Window": "弹窗",
+          "This is a modal window": "这是一个弹窗",
           "This modal can be closed by pressing the Escape key or activating the close button.":
-            "鍙互鎸塃SC鎸夐敭鎴栧惎鐢ㄥ叧闂寜閽潵鍏抽棴姝ゅ脊绐椼€�",
-          ", opens captions settings dialog": ", 寮€鍚爣棰樿缃脊绐�",
-          ", opens subtitles settings dialog": ", 寮€鍚瓧骞曡缃脊绐�",
-          ", opens descriptions settings dialog": ", 寮€鍚弿杩拌缃脊绐�",
-          ", selected": ", 閫夋嫨",
-          "captions settings": "瀛楀箷璁惧畾",
-          "Audio Player": "闊抽鎾斁鍣�",
-          "Video Player": "瑙嗛鎾斁鍣�",
-          Replay: "閲嶆挱",
-          "Progress Bar": "杩涘害灏忚妭",
-          "Volume Level": "闊抽噺",
-          "subtitles settings": "瀛楀箷璁惧畾",
-          "descriptions settings": "鎻忚堪璁惧畾",
-          Text: "鏂囧瓧",
-          White: "鐧�",
-          Black: "榛�",
-          Red: "绾�",
-          Green: "缁�",
-          Blue: "钃�",
-          Yellow: "榛�",
-          Magenta: "绱孩",
-          Cyan: "闈�",
-          Background: "鑳屾櫙",
-          Window: "瑙嗙獥",
-          Transparent: "閫忔槑",
-          "Semi-Transparent": "鍗婇€忔槑",
-          Opaque: "涓嶉€忔槑",
-          "Font Size": "瀛椾綋灏哄",
-          "Text Edge Style": "瀛椾綋杈圭紭鏍峰紡",
-          None: "鏃�",
-          Raised: "娴洉",
-          Depressed: "鍘嬩綆",
-          Uniform: "鍧囧寑",
-          Dropshadow: "涓嬮槾褰�",
-          "Font Family": "瀛椾綋搴�",
-          "Proportional Sans-Serif": "姣斾緥鏃犵粏浣�",
-          "Monospace Sans-Serif": "鍗曢棿闅旀棤缁嗕綋",
-          "Proportional Serif": "姣斾緥缁嗕綋",
-          "Monospace Serif": "鍗曢棿闅旂粏浣�",
-          Casual: "鑸掗€�",
-          Script: "鎵嬪啓浣�",
-          "Small Caps": "灏忓瀷澶у啓瀛椾綋",
-          Reset: "閲嶅惎",
-          "restore all settings to the default values":
-            "鎭㈠鍏ㄩ儴璁惧畾鑷抽璁惧€�",
-          Done: "瀹屾垚",
-          "Caption Settings Dialog": "瀛楀箷璁惧畾瑙嗙獥",
+            "可以按ESC按键或启用关闭按钮来关闭此弹窗。",
+          ", opens captions settings dialog": ", 开启标题设置弹窗",
+          ", opens subtitles settings dialog": ", 开启字幕设置弹窗",
+          ", opens descriptions settings dialog": ", 开启描述设置弹窗",
+          ", selected": ", 选择",
+          "captions settings": "字幕设定",
+          "Audio Player": "音频播放器",
+          "Video Player": "视频播放器",
+          Replay: "重播",
+          "Progress Bar": "进度小节",
+          "Volume Level": "音量",
+          "subtitles settings": "字幕设定",
+          "descriptions settings": "描述设定",
+          Text: "文字",
+          White: "白",
+          Black: "黑",
+          Red: "红",
+          Green: "绿",
+          Blue: "蓝",
+          Yellow: "黄",
+          Magenta: "紫红",
+          Cyan: "青",
+          Background: "背景",
+          Window: "视窗",
+          Transparent: "透明",
+          "Semi-Transparent": "半透明",
+          Opaque: "不透明",
+          "Font Size": "字体尺寸",
+          "Text Edge Style": "字体边缘样式",
+          None: "无",
+          Raised: "浮雕",
+          Depressed: "压低",
+          Uniform: "均匀",
+          Dropshadow: "下阴影",
+          "Font Family": "字体库",
+          "Proportional Sans-Serif": "比例无细体",
+          "Monospace Sans-Serif": "单间隔无细体",
+          "Proportional Serif": "比例细体",
+          "Monospace Serif": "单间隔细体",
+          Casual: "舒适",
+          Script: "手写体",
+          "Small Caps": "小型大写字体",
+          Reset: "重启",
+          "restore all settings to the default values": "恢复全部设定至预设值",
+          Done: "完成",
+          "Caption Settings Dialog": "字幕设定视窗",
           "Beginning of dialog window. Escape will cancel and close the window.":
-            "寮€濮嬪璇濊绐椼€傜寮€浼氬彇娑堝強鍏抽棴瑙嗙獥",
-          "End of dialog window.": "缁撴潫瀵硅瘽瑙嗙獥",
-          Quality: "娓呮櫚搴�",
+            "开始对话视窗。离开会取消及关闭视窗",
+          "End of dialog window.": "结束对话视窗",
+          Quality: "清晰度",
         };
       p.hwplayerInit();
       var v = function (e) {
@@ -632,14 +659,24 @@
             isLive: !1,
             controlBar: {
               fullscreenToggle: !0,
-              volumePanel: { inline: !1, vertical: !0 },
+              volumePanel: {
+                inline: !1,
+                vertical: !0,
+              },
             },
             playbackRates: [0.5, 1, 1.5, 2],
             language: "zh-CN",
-            html5: { hlsjsConfig: {} },
-            flvjs: { mediaDataSource: {} },
+            html5: {
+              hlsjsConfig: {},
+            },
+            flvjs: {
+              mediaDataSource: {},
+            },
             plugins: {
-              videoJsResolutionSwitcher: { default: "high", dynamicLabel: !0 },
+              videoJsResolutionSwitcher: {
+                default: "high",
+                dynamicLabel: !0,
+              },
             },
           },
           t
@@ -661,7 +698,7 @@
               kind: "subtitles",
               src: e,
               mode: "showing",
-              label: "鎵撳紑瀛楀箷",
+              label: "打开字幕",
               default: !0,
             });
             t.on("loadeddata", function () {
@@ -670,13 +707,20 @@
           }),
           m && r.stat && (m.collectData("20", s), m.collectData("10", {}));
         try {
-          r.stat && m.bindPlayer && m.bindPlayer(i, { elementId: e });
+          r.stat &&
+            m.bindPlayer &&
+            m.bindPlayer(i, {
+              elementId: e,
+            });
         } catch (o) {
           console.error(o);
         }
         return i;
       }),
-        (t["default"] = { HWPlayer: r, hwplayerloaded: o });
+        (t["default"] = {
+          HWPlayer: r,
+          hwplayerloaded: o,
+        });
     },
     function (e, t, n) {
       "use strict";
@@ -685,7 +729,11 @@
           i = a(n(6)),
           o = a(n(7));
         function a(e) {
-          return e && e.__esModule ? e : { default: e };
+          return e && e.__esModule
+            ? e
+            : {
+                default: e,
+              };
         }
         var s = {},
           u = (s.playingState = {}),
@@ -848,38 +896,35 @@
                           return (
                             (o.version =
                               n.match(/edge\/([\d.]+)/)[1] || o.version),
-                            "edge娴忚鍣�"
+                            "edge浏览器"
                           );
                         if (n.indexOf("maxthon") > 0)
                           return (
                             (o.version =
                               n.match(/maxthon\/([\d.]+)/)[1] || o.version),
-                            "鍌叉父娴忚鍣�"
+                            "傲游浏览器"
                           );
                         if (n.indexOf("qqbrowser") > 0)
                           return (
                             (o.version =
                               n.match(/qqbrowser\/([\d.]+)/)[1] || o.version),
-                            "QQ娴忚鍣�"
+                            "QQ浏览器"
                           );
-                        if (n.indexOf("se 2.x") > 0) return "鎼滅嫍娴忚鍣�";
+                        if (n.indexOf("se 2.x") > 0) return "搜狗浏览器";
                         if (i && "Opera" !== o.type) {
                           var t = e.external,
                             r = e.clientInformation.languages;
-                          if (t && "LiebaoGetVersion" in t)
-                            return "鐚庤惫娴忚鍣�";
+                          if (t && "LiebaoGetVersion" in t) return "猎豹浏览器";
                           if (n.indexOf("bidubrowser") > 0)
                             return (
                               (o.version =
                                 n.match(/bidubrowser\/([\d.]+)/)[1] ||
                                 n.match(/chrome\/([\d.]+)/)[1]),
-                              "鐧惧害娴忚鍣�"
+                              "百度浏览器"
                             );
                           if (o.supportSubTitle() && void 0 === r) {
                             var a = Object.keys(i.webstore).length;
-                            return a > 1
-                              ? "360鏋侀€熸祻瑙堝櫒"
-                              : "360瀹夊叏娴忚鍣�";
+                            return a > 1 ? "360极速浏览器" : "360安全浏览器";
                           }
                           return "Chrome";
                         }
@@ -887,7 +932,9 @@
                       }),
                       (o.name = o.shell());
                   } catch (a) {}
-                  return { client: o };
+                  return {
+                    client: o,
+                  };
                 })(window);
               return (
                 e.client.name == undefined || "" == e.client.name
@@ -1028,10 +1075,10 @@
               url: t,
               data: JSON.stringify(e),
               success: function (e, t) {
-                console.log("鏁版嵁涓婃姤鎴愬姛锛屽搷搴斿涓嬶細", e);
+                console.log("数据上报成功，响应如下：", e);
               },
               error: function (e, t) {
-                console.warn("鏁版嵁涓婃姤寮傚父锛�", t);
+                console.warn("数据上报异常：", t);
               },
               dataType: "json",
             });
@@ -1065,7 +1112,10 @@
                   .getAttribute("data-setup");
               (s[n] = ""),
                 (e.getStatOptions = function () {
-                  return { sessionId: n, stat: g() };
+                  return {
+                    sessionId: n,
+                    stat: g(),
+                  };
                 }),
                 (e.getStat = function () {
                   return g();
@@ -1134,7 +1184,9 @@
                         if (((f = null), !C)) {
                           (y = 1), (C = !0);
                           var t = e.currentSources();
-                          v("15", { url: btoa(t[0].src) }),
+                          v("15", {
+                            url: btoa(t[0].src),
+                          }),
                             h.bindEvent(
                               window,
                               "beforeunload",
@@ -1335,7 +1387,9 @@
                   var l = new Error("Cannot find module '" + s + "'");
                   throw ((l.code = "MODULE_NOT_FOUND"), l);
                 }
-                var c = (n[s] = { exports: {} });
+                var c = (n[s] = {
+                  exports: {},
+                });
                 t[s][0].call(
                   c.exports,
                   function (e) {
@@ -1551,7 +1605,9 @@
                     return n < 0 ? t : 0 === n ? t : n + a[e[n]] > t ? n : t;
                   });
               },
-              { "./common": 1 },
+              {
+                "./common": 1,
+              },
             ],
             3: [
               function (e, t, n) {
@@ -3142,7 +3198,9 @@
                       })(e);
                   });
               },
-              { "../utils/common": 1 },
+              {
+                "../utils/common": 1,
+              },
             ],
             8: [
               function (e, t, n) {
@@ -3356,7 +3414,12 @@
             w = function (e) {
               return null != e && e === e.window;
             },
-            _ = { type: !0, src: !0, nonce: !0, noModule: !0 };
+            _ = {
+              type: !0,
+              src: !0,
+              nonce: !0,
+              noModule: !0,
+            };
           function x(e, t, n) {
             var r,
               i,
@@ -3505,7 +3568,9 @@
                 return !0;
               },
               globalEval: function (e, t) {
-                x(e, { nonce: t && t.nonce });
+                x(e, {
+                  nonce: t && t.nonce,
+                });
               },
               each: function (e, t) {
                 var n,
@@ -3697,7 +3762,7 @@
               ie = function (e, t) {
                 return t
                   ? "\0" === e
-                    ? "锟�"
+                    ? "�"
                     : e.slice(0, -1) +
                       "\\" +
                       e.charCodeAt(e.length - 1).toString(16) +
@@ -3713,7 +3778,10 @@
                     !0 === e.disabled && "fieldset" === e.nodeName.toLowerCase()
                   );
                 },
-                { dir: "parentNode", next: "legend" }
+                {
+                  dir: "parentNode",
+                  next: "legend",
+                }
               );
             try {
               O.apply((D = P.call(_.childNodes)), _.childNodes),
@@ -4203,10 +4271,20 @@
               attrHandle: {},
               find: {},
               relative: {
-                ">": { dir: "parentNode", first: !0 },
-                " ": { dir: "parentNode" },
-                "+": { dir: "previousSibling", first: !0 },
-                "~": { dir: "previousSibling" },
+                ">": {
+                  dir: "parentNode",
+                  first: !0,
+                },
+                " ": {
+                  dir: "parentNode",
+                },
+                "+": {
+                  dir: "previousSibling",
+                  first: !0,
+                },
+                "~": {
+                  dir: "previousSibling",
+                },
               },
               preFilter: {
                 ATTR: function (e) {
@@ -4538,9 +4616,19 @@
                 }),
               },
             }).pseudos.nth = r.pseudos.eq),
-            { radio: !0, checkbox: !0, file: !0, password: !0, image: !0 }))
+            {
+              radio: !0,
+              checkbox: !0,
+              file: !0,
+              password: !0,
+              image: !0,
+            }))
               r.pseudos[t] = pe(t);
-            for (t in { submit: !0, reset: !0 }) r.pseudos[t] = he(t);
+            for (t in {
+              submit: !0,
+              reset: !0,
+            })
+              r.pseudos[t] = he(t);
             function ve() {}
             function be(e) {
               for (var t = 0, n = e.length, r = ""; t < n; t++) r += e[t].value;
@@ -4683,9 +4771,9 @@
                       u > 1 && _e(f),
                       u > 1 &&
                         be(
-                          e
-                            .slice(0, u - 1)
-                            .concat({ value: " " === e[u - 2].type ? "*" : "" })
+                          e.slice(0, u - 1).concat({
+                            value: " " === e[u - 2].type ? "*" : "",
+                          })
                         ).replace(U, "$1"),
                       n,
                       u < i && Te(e.slice(u, i)),
@@ -4716,13 +4804,20 @@
                   (n = !1),
                   (i = W.exec(s)) &&
                     ((n = i.shift()),
-                    o.push({ value: n, type: i[0].replace(U, " ") }),
+                    o.push({
+                      value: n,
+                      type: i[0].replace(U, " "),
+                    }),
                     (s = s.slice(n.length))),
                   r.filter))
                     !(i = G[a].exec(s)) ||
                       (l[a] && !(i = l[a](i))) ||
                       ((n = i.shift()),
-                      o.push({ value: n, type: a, matches: i }),
+                      o.push({
+                        value: n,
+                        type: a,
+                        matches: i,
+                      }),
                       (s = s.slice(n.length)));
                   if (!n) break;
                 }
@@ -5038,7 +5133,12 @@
           }).prototype = T.fn),
             (P = T(s));
           var q = /^(?:parents|prev(?:Until|All))/,
-            I = { children: !0, contents: !0, next: !0, prev: !0 };
+            I = {
+              children: !0,
+              contents: !0,
+              next: !0,
+              prev: !0,
+            };
           function H(e, t) {
             for (; (e = e[t]) && 1 !== e.nodeType; );
             return e;
@@ -5770,7 +5870,9 @@
             ue = function (e) {
               return T.contains(e.ownerDocument, e);
             },
-            le = { composed: !0 };
+            le = {
+              composed: !0,
+            };
           se.getRootNode &&
             (ue = function (e) {
               return (
@@ -6224,11 +6326,19 @@
                           ? T(i, this).index(l) > -1
                           : T.find(i, this, null, [l]).length),
                         a[i] && o.push(r);
-                    o.length && s.push({ elem: l, handlers: o });
+                    o.length &&
+                      s.push({
+                        elem: l,
+                        handlers: o,
+                      });
                   }
               return (
                 (l = this),
-                u < t.length && s.push({ elem: l, handlers: t.slice(u) }),
+                u < t.length &&
+                  s.push({
+                    elem: l,
+                    handlers: t.slice(u),
+                  }),
                 s
               );
             },
@@ -6257,7 +6367,9 @@
               return e[T.expando] ? e : new T.Event(e);
             },
             special: {
-              load: { noBubble: !0 },
+              load: {
+                noBubble: !0,
+              },
               click: {
                 setup: function (e) {
                   var t = this || e;
@@ -6397,17 +6509,23 @@
               },
               T.event.addProp
             ),
-            T.each({ focus: "focusin", blur: "focusout" }, function (e, t) {
-              T.event.special[e] = {
-                setup: function () {
-                  return Ne(this, e, Ee), !1;
-                },
-                trigger: function () {
-                  return Ne(this, e), !0;
-                },
-                delegateType: t,
-              };
-            }),
+            T.each(
+              {
+                focus: "focusin",
+                blur: "focusout",
+              },
+              function (e, t) {
+                T.event.special[e] = {
+                  setup: function () {
+                    return Ne(this, e, Ee), !1;
+                  },
+                  trigger: function () {
+                    return Ne(this, e), !0;
+                  },
+                  delegateType: t,
+                };
+              }
+            ),
             T.each(
               {
                 mouseenter: "mouseover",
@@ -6885,7 +7003,10 @@
               visibility: "hidden",
               display: "block",
             },
-            tt = { letterSpacing: "0", fontWeight: "400" };
+            tt = {
+              letterSpacing: "0",
+              fontWeight: "400",
+            };
           function nt(e, t, n) {
             var r = oe.exec(t);
             return r ? Math.max(0, r[2] - (n || 0)) + (r[3] || "px") : t;
@@ -7077,30 +7198,40 @@
                 return (
                   (parseFloat(Ve(e, "marginLeft")) ||
                     e.getBoundingClientRect().left -
-                      de(e, { marginLeft: 0 }, function () {
-                        return e.getBoundingClientRect().left;
-                      })) + "px"
+                      de(
+                        e,
+                        {
+                          marginLeft: 0,
+                        },
+                        function () {
+                          return e.getBoundingClientRect().left;
+                        }
+                      )) + "px"
                 );
             })),
-            T.each({ margin: "", padding: "", border: "Width" }, function (
-              e,
-              t
-            ) {
-              (T.cssHooks[e + t] = {
-                expand: function (n) {
-                  for (
-                    var r = 0,
-                      i = {},
-                      o = "string" == typeof n ? n.split(" ") : [n];
-                    r < 4;
-                    r++
-                  )
-                    i[e + ae[r] + t] = o[r] || o[r - 2] || o[0];
-                  return i;
-                },
-              }),
-                "margin" !== e && (T.cssHooks[e + t].set = nt);
-            }),
+            T.each(
+              {
+                margin: "",
+                padding: "",
+                border: "Width",
+              },
+              function (e, t) {
+                (T.cssHooks[e + t] = {
+                  expand: function (n) {
+                    for (
+                      var r = 0,
+                        i = {},
+                        o = "string" == typeof n ? n.split(" ") : [n];
+                      r < 4;
+                      r++
+                    )
+                      i[e + ae[r] + t] = o[r] || o[r - 2] || o[0];
+                    return i;
+                  },
+                }),
+                  "margin" !== e && (T.cssHooks[e + t].set = nt);
+              }
+            ),
             T.fn.extend({
               css: function (e, t) {
                 return V(
@@ -7224,7 +7355,9 @@
           function ft(e, t) {
             var n,
               r = 0,
-              i = { height: e };
+              i = {
+                height: e,
+              };
             for (t = t ? 1 : 0; r < 4; r += 2 - t)
               i["margin" + (n = ae[r])] = i["padding" + n] = e;
             return t && (i.opacity = i.width = e), i;
@@ -7274,7 +7407,10 @@
                 props: T.extend({}, t),
                 opts: T.extend(
                   !0,
-                  { specialEasing: {}, easing: T.easing._default },
+                  {
+                    specialEasing: {},
+                    easing: T.easing._default,
+                  },
                   n
                 ),
                 originalProperties: t,
@@ -7339,7 +7475,11 @@
                 .fail(l.opts.fail)
                 .always(l.opts.always),
               T.fx.timer(
-                T.extend(u, { elem: e, anim: l, queue: l.opts.queue })
+                T.extend(u, {
+                  elem: e,
+                  anim: l,
+                  queue: l.opts.queue,
+                })
               ),
               l
             );
@@ -7434,7 +7574,9 @@
                     u ||
                       (m
                         ? "hidden" in m && (g = m.hidden)
-                        : (m = Z.access(e, "fxshow", { display: l })),
+                        : (m = Z.access(e, "fxshow", {
+                            display: l,
+                          })),
                       o && (m.hidden = !g),
                       g && ge([e], !0),
                       f.done(function () {
@@ -7478,11 +7620,14 @@
             }),
             T.fn.extend({
               fadeTo: function (e, t, n, r) {
-                return this.filter(ce)
-                  .css("opacity", 0)
-                  .show()
-                  .end()
-                  .animate({ opacity: t }, e, n, r);
+                return this.filter(ce).css("opacity", 0).show().end().animate(
+                  {
+                    opacity: t,
+                  },
+                  e,
+                  n,
+                  r
+                );
               },
               animate: function (e, t, n, r) {
                 var i = T.isEmptyObject(e),
@@ -7561,9 +7706,15 @@
                 slideDown: ft("show"),
                 slideUp: ft("hide"),
                 slideToggle: ft("toggle"),
-                fadeIn: { opacity: "show" },
-                fadeOut: { opacity: "hide" },
-                fadeToggle: { opacity: "toggle" },
+                fadeIn: {
+                  opacity: "show",
+                },
+                fadeOut: {
+                  opacity: "hide",
+                },
+                fadeToggle: {
+                  opacity: "toggle",
+                },
               },
               function (e, t) {
                 T.fn[e] = function (e, n, r) {
@@ -7590,7 +7741,11 @@
             (T.fx.stop = function () {
               st = null;
             }),
-            (T.fx.speeds = { slow: 600, fast: 200, _default: 400 }),
+            (T.fx.speeds = {
+              slow: 600,
+              fast: 200,
+              _default: 400,
+            }),
             (T.fn.delay = function (e, t) {
               return (
                 (e = (T.fx && T.fx.speeds[e]) || e),
@@ -7745,7 +7900,10 @@
                   },
                 },
               },
-              propFix: { for: "htmlFor", class: "className" },
+              propFix: {
+                for: "htmlFor",
+                class: "className",
+              },
             }),
             v.optSelected ||
               (T.propHooks.selected = {
@@ -8053,7 +8211,10 @@
               }
             },
             simulate: function (e, t, n) {
-              var r = T.extend(new T.Event(), n, { type: e, isSimulated: !0 });
+              var r = T.extend(new T.Event(), n, {
+                type: e,
+                isSimulated: !0,
+              });
               T.event.trigger(r, null, t);
             },
           }),
@@ -8069,26 +8230,32 @@
               },
             }),
             v.focusin ||
-              T.each({ focus: "focusin", blur: "focusout" }, function (e, t) {
-                var n = function (e) {
-                  T.event.simulate(t, e.target, T.event.fix(e));
-                };
-                T.event.special[t] = {
-                  setup: function () {
-                    var r = this.ownerDocument || this,
-                      i = Z.access(r, t);
-                    i || r.addEventListener(e, n, !0),
-                      Z.access(r, t, (i || 0) + 1);
-                  },
-                  teardown: function () {
-                    var r = this.ownerDocument || this,
-                      i = Z.access(r, t) - 1;
-                    i
-                      ? Z.access(r, t, i)
-                      : (r.removeEventListener(e, n, !0), Z.remove(r, t));
-                  },
-                };
-              });
+              T.each(
+                {
+                  focus: "focusin",
+                  blur: "focusout",
+                },
+                function (e, t) {
+                  var n = function (e) {
+                    T.event.simulate(t, e.target, T.event.fix(e));
+                  };
+                  T.event.special[t] = {
+                    setup: function () {
+                      var r = this.ownerDocument || this,
+                        i = Z.access(r, t);
+                      i || r.addEventListener(e, n, !0),
+                        Z.access(r, t, (i || 0) + 1);
+                    },
+                    teardown: function () {
+                      var r = this.ownerDocument || this,
+                        i = Z.access(r, t) - 1;
+                      i
+                        ? Z.access(r, t, i)
+                        : (r.removeEventListener(e, n, !0), Z.remove(r, t));
+                    },
+                  };
+                }
+              );
           var St = i.location,
             Ct = Date.now(),
             jt = /\?/;
@@ -8175,9 +8342,15 @@
                       ? null
                       : Array.isArray(n)
                       ? T.map(n, function (e) {
-                          return { name: t.name, value: e.replace(Et, "\r\n") };
+                          return {
+                            name: t.name,
+                            value: e.replace(Et, "\r\n"),
+                          };
                         })
-                      : { name: t.name, value: n.replace(Et, "\r\n") };
+                      : {
+                          name: t.name,
+                          value: n.replace(Et, "\r\n"),
+                        };
                   })
                   .get();
               },
@@ -8255,7 +8428,11 @@
                   xml: "application/xml, text/xml",
                   json: "application/json, text/javascript",
                 },
-                contents: { xml: /\bxml\b/, html: /\bhtml/, json: /\bjson\b/ },
+                contents: {
+                  xml: /\bxml\b/,
+                  html: /\bhtml/,
+                  json: /\bjson\b/,
+                },
                 responseFields: {
                   xml: "responseXML",
                   text: "responseText",
@@ -8267,7 +8444,10 @@
                   "text json": JSON.parse,
                   "text xml": T.parseXML,
                 },
-                flatOptions: { url: !0, context: !0 },
+                flatOptions: {
+                  url: !0,
+                  context: !0,
+                },
               },
               ajaxSetup: function (e, t) {
                 return t ? $t($t(e, T.ajaxSettings), t) : $t(T.ajaxSettings, e);
@@ -8526,7 +8706,10 @@
                                   };
                                 }
                           }
-                      return { state: "success", data: t };
+                      return {
+                        state: "success",
+                        data: t,
+                      };
                     })(g, h, S, u)),
                     u
                       ? (g.ifModified &&
@@ -8573,7 +8756,13 @@
                   b(n) && ((i = i || r), (r = n), (n = undefined)),
                   T.ajax(
                     T.extend(
-                      { url: e, type: t, dataType: i, data: n, success: r },
+                      {
+                        url: e,
+                        type: t,
+                        dataType: i,
+                        data: n,
+                        success: r,
+                      },
                       T.isPlainObject(e) && e
                     )
                   )
@@ -8588,7 +8777,9 @@
                 cache: !0,
                 async: !1,
                 global: !1,
-                converters: { "text script": function () {} },
+                converters: {
+                  "text script": function () {},
+                },
                 dataFilter: function (e) {
                   T.globalEval(e, t);
                 },
@@ -8655,7 +8846,10 @@
                 return new i.XMLHttpRequest();
               } catch (e) {}
             });
-          var Vt = { 0: 200, 1223: 204 },
+          var Vt = {
+              0: 200,
+              1223: 204,
+            },
             Xt = T.ajaxSettings.xhr();
           (v.cors = !!Xt && "withCredentials" in Xt),
             (v.ajax = Xt = !!Xt),
@@ -8694,8 +8888,12 @@
                                 s.statusText,
                                 "text" !== (s.responseType || "text") ||
                                   "string" != typeof s.responseText
-                                  ? { binary: s.response }
-                                  : { text: s.responseText },
+                                  ? {
+                                      binary: s.response,
+                                    }
+                                  : {
+                                      text: s.responseText,
+                                    },
                                 s.getAllResponseHeaders()
                               ));
                       };
@@ -8730,7 +8928,9 @@
                 script:
                   "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript",
               },
-              contents: { script: /\b(?:java|ecma)script\b/ },
+              contents: {
+                script: /\b(?:java|ecma)script\b/,
+              },
               converters: {
                 "text script": function (e) {
                   return T.globalEval(e), e;
@@ -8748,7 +8948,10 @@
                   send: function (r, i) {
                     (t = T("<script>")
                       .attr(e.scriptAttrs || {})
-                      .prop({ charset: e.scriptCharset, src: e.url })
+                      .prop({
+                        charset: e.scriptCharset,
+                        src: e.url,
+                      })
                       .on(
                         "load error",
                         (n = function (e) {
@@ -8943,7 +9146,10 @@
                         top: t.top + n.pageYOffset,
                         left: t.left + n.pageXOffset,
                       })
-                    : { top: 0, left: 0 }
+                    : {
+                        top: 0,
+                        left: 0,
+                      }
                   : void 0;
               },
               position: function () {
@@ -8952,7 +9158,10 @@
                     t,
                     n,
                     r = this[0],
-                    i = { top: 0, left: 0 };
+                    i = {
+                      top: 0,
+                      left: 0,
+                    };
                   if ("fixed" === T.css(r, "position"))
                     t = r.getBoundingClientRect();
                   else {
@@ -8995,7 +9204,10 @@
               },
             }),
             T.each(
-              { scrollLeft: "pageXOffset", scrollTop: "pageYOffset" },
+              {
+                scrollLeft: "pageXOffset",
+                scrollTop: "pageYOffset",
+              },
               function (e, t) {
                 var n = "pageYOffset" === t;
                 T.fn[e] = function (r) {
@@ -9032,42 +9244,52 @@
                   );
               });
             }),
-            T.each({ Height: "height", Width: "width" }, function (e, t) {
-              T.each(
-                { padding: "inner" + e, content: t, "": "outer" + e },
-                function (n, r) {
-                  T.fn[r] = function (i, o) {
-                    var a = arguments.length && (n || "boolean" != typeof i),
-                      s = n || (!0 === i || !0 === o ? "margin" : "border");
-                    return V(
-                      this,
-                      function (t, n, i) {
-                        var o;
-                        return w(t)
-                          ? 0 === r.indexOf("outer")
-                            ? t["inner" + e]
-                            : t.document.documentElement["client" + e]
-                          : 9 === t.nodeType
-                          ? ((o = t.documentElement),
-                            Math.max(
-                              t.body["scroll" + e],
-                              o["scroll" + e],
-                              t.body["offset" + e],
-                              o["offset" + e],
-                              o["client" + e]
-                            ))
-                          : i === undefined
-                          ? T.css(t, n, s)
-                          : T.style(t, n, i, s);
-                      },
-                      t,
-                      a ? i : undefined,
-                      a
-                    );
-                  };
-                }
-              );
-            }),
+            T.each(
+              {
+                Height: "height",
+                Width: "width",
+              },
+              function (e, t) {
+                T.each(
+                  {
+                    padding: "inner" + e,
+                    content: t,
+                    "": "outer" + e,
+                  },
+                  function (n, r) {
+                    T.fn[r] = function (i, o) {
+                      var a = arguments.length && (n || "boolean" != typeof i),
+                        s = n || (!0 === i || !0 === o ? "margin" : "border");
+                      return V(
+                        this,
+                        function (t, n, i) {
+                          var o;
+                          return w(t)
+                            ? 0 === r.indexOf("outer")
+                              ? t["inner" + e]
+                              : t.document.documentElement["client" + e]
+                            : 9 === t.nodeType
+                            ? ((o = t.documentElement),
+                              Math.max(
+                                t.body["scroll" + e],
+                                o["scroll" + e],
+                                t.body["offset" + e],
+                                o["offset" + e],
+                                o["client" + e]
+                              ))
+                            : i === undefined
+                            ? T.css(t, n, s)
+                            : T.style(t, n, i, s);
+                        },
+                        t,
+                        a ? i : undefined,
+                        a
+                      );
+                    };
+                  }
+                );
+              }
+            ),
             T.each(
               "blur focus focusin focusout resize scroll click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup contextmenu".split(
                 " "
