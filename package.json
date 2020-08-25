@@ -1,6 +1,6 @@
 {
   "name": "hwplayer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "huawei live web player hwplayer",
   "main": "index.js",
   "repository": "git@github.com:liuguang2016/hwplayer.git",
